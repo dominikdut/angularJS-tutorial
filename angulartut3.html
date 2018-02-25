@@ -11,6 +11,22 @@
 </head>
 <body>
 
+<div id="groceryList" ng-controller="gListCtrl">
+
+  <h3 class="ListTitle">{{groceries.length}} Groceries to Get</h3>
+
+  <ol style="margin: 0 0 -15px 0;">
+    <li>{{groceries[0].item}}</li>
+  </ol>
+
+
+  <!--Skipping the first item using start and skipping showing Tomatoes using ng-if-->
+  <ol start="2">
+    <li ng-repeat="grocery in groceries" ng-if="$index > 0">{{grocery.item}}</li>
+  </ol>
+
+</div>
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
