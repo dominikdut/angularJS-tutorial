@@ -22,8 +22,21 @@
 
   <!--Skipping the first item using start and skipping showing Tomatoes using ng-if-->
   <ol start="2">
-    <li ng-repeat="grocery in groceries" ng-if="$index > 0">{{grocery.item}}</li>
+    <li ng-repeat="grocery in groceries" ng-if="$index > 0">{{grocery.item}} {{$index}}</li>
   </ol>
+
+
+  <table>
+    <tr ng-repeat-start="grocery in groceries">
+      <td>
+        {{grocery.item}}
+      </td>
+    </tr>
+
+    <tr ng-repeat-end>
+      <td>{{grocery.purchased}}</td>
+    </tr>
+  </table>
 
 </div>
 
