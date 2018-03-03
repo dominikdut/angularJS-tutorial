@@ -13,7 +13,7 @@ app3.controller('gListCtrl', function ($scope) {
   ];
 
   $scope.getList = function() {
-    return $scope.showList ? "ulgrocerylist.html" : "grocerylist"
+    return $scope.showList ? "ulgrocerylist.html" : "grocerylist.html"
   }
 
 });
