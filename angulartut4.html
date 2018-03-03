@@ -38,10 +38,10 @@
          ng-copy="copy = copy + 1"
          ng-paste="paste = paste + 1"
          ng-cut="cut = cut + 1"
-         ng-focus="focus + 1"
+         ng-focus="focus = focus + 1"
          ng-model="confirmed"
          ng-change="change = change + 1"
-         ng-keydown="keydown = keydown + 1"
+         ng-keydown="keydown($event)"
          ng-mouseenter="mouseenter = mouseenter + 1"
          ng-mouseleave="mouseleave = mouseleave + 1"/>
 
