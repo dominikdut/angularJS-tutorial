@@ -25,5 +25,15 @@ app4.controller('eventCtrl', function ($scope) {
   // Used to show and hide elements
   $scope.daytimeButton = true;
 
+  $scope.capitals = [
+    {city: 'Montgomery', state: 'Alabama'},
+    {city: 'Juneau', state: 'Alaska'},
+    {city: 'Phoenix', state: 'Arizona'},
+    {city: 'Phoenix', state: 'Arizona'},
+    {city: 'Phoenix', state: 'Arizona'},
+    {city: 'Phoenix', state: 'Arizona'},
+    {city: 'Phoenix', state: 'Arizona'}
+  ]
+
 
 });
