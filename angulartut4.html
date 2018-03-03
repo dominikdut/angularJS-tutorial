@@ -82,6 +82,15 @@
     </select>
   </p>
   <p ng-class="textStyling">Some Random Text</p>
+
+    <table>
+      <tr ng-repeat="item in capitals"
+          ng-class-even="'stripedblue'"
+          ng-class-odd="'stripedbeige'">
+        <td>{{item.city}}</td>
+        <td>{{item.state}}</td>
+      </tr>
+    </table>
 </div>
 
 
