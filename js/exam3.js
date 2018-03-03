@@ -12,4 +12,8 @@ app3.controller('gListCtrl', function ($scope) {
     {item: "Hummus", purchased: false}
   ];
 
+  $scope.getList = function() {
+    return $scope.showList ? "ulgrocerylist.html" : "grocerylist"
+  }
+
 });
