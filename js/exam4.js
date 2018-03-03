@@ -25,4 +25,5 @@ app4.controller('eventCtrl', function ($scope) {
   // Used to show and hide elements
   $scope.daytimeButton = true;
 
+
 });
